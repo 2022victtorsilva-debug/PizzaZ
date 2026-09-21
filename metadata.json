@@ -1,0 +1,6 @@
+{
+  "name": "PizzaZ - Senador Canedo",
+  "description": "Site institucional premium da Pizza Z em Senador Canedo - GO. Cardápio completo, pedidos via WhatsApp, ambiente familiar com brinquedoteca e avaliações reais.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

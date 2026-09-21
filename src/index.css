@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #f43f5e;
+    --primary-hover: #e11d48;
+    --secondary: #10b981;
+    --secondary-hover: #059669;
+  }
+
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Ensure high contrast and sharp legibility across all text elements */
+.text-zinc-600 {
+  color: #27272a; /* high-contrast dark charcoal in light mode */
+}
+.text-zinc-500 {
+  color: #3f3f46; /* elevated contrast in light mode */
+}
+.text-zinc-400 {
+  color: #4b5563; /* elevated readability in light mode */
+}
+
+/* Ensure placeholder texts in inputs and textareas are clearly readable */
+::placeholder {
+  color: #64748b !important;
+  opacity: 1 !important;
+}
+
+.dark ::placeholder {
+  color: #94a3b8 !important;
+  opacity: 1 !important;
+}
+
+.dark .text-zinc-400 {
+  color: #e2e8f0; /* very crisp light slate in dark mode */
+}
+.dark .text-zinc-500 {
+  color: #cbd5e1; /* crisp legible secondary text in dark mode */
+}
+.dark .text-zinc-600 {
+  color: #cbd5e1; /* easily readable */
+}
+
+/* Custom delicate ambient background effect */
+.ambient-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(244, 63, 94, 0.08), transparent 70%),
+              radial-gradient(circle at 80% 30%, rgba(16, 185, 129, 0.05), transparent 60%);
+}
+
+.dark .ambient-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(244, 63, 94, 0.12), transparent 70%),
+              radial-gradient(circle at 80% 30%, rgba(16, 185, 129, 0.08), transparent 60%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.6);
+}
